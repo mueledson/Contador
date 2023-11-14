@@ -4,8 +4,10 @@ import './styles.css'
 export default function Card() {
 
     let [qtd, setQtd] = useState<number>(1);
-    const [valor, setValor] = useState<number>(10);
+    const [valor, setValor] = useState<number>(0);
     const [total, setTotal] = useState<number>(valor);
+
+    setValor(10)
 
     const somar = () => {
         setQtd( qtd + 1 )
